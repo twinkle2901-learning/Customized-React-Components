@@ -25,7 +25,7 @@ function App() {
           </div>
 
           {/* Font weight */}
-          <div className="my-4 space-y-4">
+          <div className="space-y-4">
             <p className="font-light">Roboto Light (300)</p>
             <p className="font-normal">Roboto Regular (400)</p>
             <p className="font-medium">Roboto Medium (500)</p>
@@ -40,7 +40,8 @@ function App() {
           </div>
 
           {/* FontAwesome icons */}
-          <div className="my-4 space-y-4">
+          <div>
+            {/* Css selector */}
             <p className="fa-user">
               User Profile
             </p>
