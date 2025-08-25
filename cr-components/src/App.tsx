@@ -8,8 +8,11 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 function App() {
   return (
     <>
-      <div className="xl:container">
-        <div className="grid grid-cols-2 gap-4">
+      <div className="container-xl">
+
+        <h1>testing</h1>
+
+        <div className="grid md:grid-cols-2 gap-4">
 
           {/* Font Sizes */}
           <div className="space-y-4">
