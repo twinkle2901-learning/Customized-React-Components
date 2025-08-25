@@ -2,6 +2,7 @@ import React from "react";
 
 import CButton from "./buttons/button";
 import CrLayout from "./layout/layout";
+import CDropdown from "./dropdown/dropdown";
 // import CDropdown from "./dropdown/dropdown";
 
 function ComponentsCall() {
@@ -12,7 +13,7 @@ function ComponentsCall() {
                 title="Component Title"
                 body={
                     <>
-                        <CButton label="Test Button" />
+                        <CDropdown />
                     </>
                 }
             />
