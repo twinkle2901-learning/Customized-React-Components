@@ -2,17 +2,19 @@ import React from "react";
 
 import CButton from "./buttons/button";
 import CrLayout from "./layout/layout";
-// import CDropdown from "./dropdown/dropdown";
+import CSectionTitle from "./sectiontitle/sectiontitle";
 
 function ComponentsCall() {
     return (
         <>
             {/* Component Title */}
             <CrLayout
-                title="Component Title"
+                // title="Heading Title"
                 body={
                     <>
-                        <CButton label="Test Button" />
+                        <CSectionTitle title="Heading Title" description="lorem ipsum dolor sit amet" rightsec={<>
+                            <CButton label="Button" size="sm" variant="light" />
+                        </>} />
                     </>
                 }
             />

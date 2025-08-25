@@ -1,0 +1,19 @@
+@import "./../../mixins";
+
+.c {
+  &-sectitle {
+    @extend .flex-between;
+  }
+  &-secleft {
+    h3 {
+      @apply mb-0;
+    }
+  }
+  &-secright {
+    @apply flex gap-2;
+
+    @include responsive(max, 767.98px) {
+      @apply flex-col;
+    }
+  }
+}
