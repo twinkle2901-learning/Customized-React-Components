@@ -1,7 +1,7 @@
 import React, { JSX } from "react";
 import "./button.scss";
 
-interface IProps {
+interface IProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     color?:
     | "primary"
     | "secondary"
@@ -18,8 +18,13 @@ interface IProps {
     icon?: JSX.Element;
     iconPosition?: "left" | "right";
     classes?: string;
+
+    // onClick?: React.MouseEventHandler<HTMLButtonElement>;
+    // also useful for accessibility
+    // "aria-haspopup"?: string;
+    // "aria-expanded"?: boolean;
+
 }
-//try not to shorthand in text-ok
 
 function CButton({
     // bgcolor,
@@ -32,6 +37,10 @@ function CButton({
     icon,
     iconPosition = "right",
     classes,
+    onClick,
+    // "aria-haspopup",
+    // "aria-expanded"
+    ...rest // ✅ includes aria-haspopup, aria-expanded, etc.
 }: IProps) {
     // Convert radius to rem if it's a number
     const radiusValue = typeof radius === "number" ? `${radius}rem` : radius;
@@ -68,6 +77,8 @@ function CButton({
                 btn-size={size}
                 btn-variant={variant}
                 disabled={disabled}
+                onClick={onClick}
+                {...rest}
             >
                 {iconPosition === "left" && icon}
                 {label}

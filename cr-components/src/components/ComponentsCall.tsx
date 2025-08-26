@@ -1,8 +1,8 @@
 import React from "react";
 
-import CButton from "./buttons/button";
 import CrLayout from "./layout/layout";
 import CSectionTitle from "./sectiontitle/sectiontitle";
+import CButton from "./buttons/button";
 
 function ComponentsCall() {
     return (

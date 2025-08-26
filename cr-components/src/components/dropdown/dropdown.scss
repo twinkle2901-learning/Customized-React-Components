@@ -1,3 +1,26 @@
 .c-dropdown {
-    .c-btn {}
+    @apply relative inline-block;
+
+    .dropdown {
+        &-menu {
+            // @apply absolute top-full left-0 z-50 hidden float-left min-w-40 py-2 px-0 mt-0.5 text-base text-slate-600 text-left list-none bg-white bg-clip-padding border-0 rounded-lg shadow-2xl;
+            @apply absolute left-0 mt-2 w-48 rounded-lg bg-white shadow-lg origin-top scale-95 opacity-0 pointer-events-none transition-all duration-200 ease-in-out;
+
+            &.show {
+                @apply scale-100 opacity-100 pointer-events-auto;
+            }
+        }
+
+        &-item {
+            // @apply block w-full py-2 px-5 clear-both font-normal text-slate-800 whitespace-nowrap bg-transparent;
+            // text-align: inherit;
+
+            @apply block px-4 py-2 text-gray-700 hover:bg-gray-100;
+
+            &:hover,
+            &:focus {
+                @apply no-underline bg-slate-200;
+            }
+        }
+    }
 }
