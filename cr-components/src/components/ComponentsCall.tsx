@@ -1,6 +1,7 @@
 import React from "react";
 
 import CrLayout from "./layout/layout";
+import CButton from "./buttons/button";
 // import CDropdown from "./dropdown/dropdown";
 
 function ComponentsCall() {
