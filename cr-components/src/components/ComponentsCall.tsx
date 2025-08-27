@@ -1,16 +1,15 @@
 import React from "react";
 
 import CrLayout from "./layout/layout";
-import CButton from "./buttons/button";
 import CDropdown from "./dropdown/dropdown";
 // import CDropdown from "./dropdown/dropdown";
 
 function ComponentsCall() {
 
     const userMenu = [
-        { label: "Profile", href: "/profile" },
-        { label: "Settings", href: "/settings" },
-        { label: "Logout", href: "/logout" },
+        { label: "Profile", href: "#" },
+        { label: "Settings", href: "#" },
+        { label: "Logout", href: "#" },
     ];
 
     return (
@@ -21,8 +20,7 @@ function ComponentsCall() {
                 body={
                     <>
                         <CDropdown items={userMenu} label="User Menu"
-                        // placement="top-left"
-                        // its size and scroll position of dropdown menu ???????????????
+                        // size="lg"
                         />
                     </>
                 }

@@ -9,13 +9,13 @@
 
             &[aria-expanded="true"] {
                 svg {
-                    @apply rotate-180;
+                    @apply -rotate-180;
                 }
             }
         }
 
         &-menu {
-            @apply absolute w-48 rounded-lg bg-white shadow-lg origin-top scale-95 opacity-0 pointer-events-none transition-all duration-200 ease-in-out;
+            @apply absolute w-48 rounded-lg bg-white shadow-lg origin-top scale-95 opacity-0 pointer-events-none transition-all duration-200 ease-in-out overflow-hidden;
 
             &.show {
                 @apply scale-100 opacity-100 pointer-events-auto;
